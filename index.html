@@ -1,59 +1,139 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hacker Portfolio | Red Teaming</title>
+    <title>Guilherme Santos | Cybersecurity Analyst</title>
+    <link rel="icon" type="image/png" href="1.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+    <canvas id="terminal-bg"></canvas>
 
-    <nav>
-        <div class="logo">root@dev:~#</div>
-        <div class="nav-links">
-            <a href="#work">Work</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+    <nav class="nav-full">
+        <div class="nav-container">
+            <div class="logo">kali@sec:~$ <span class="cursor">_</span></div>
+            <div class="nav-links">
+                <a href="#work">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#certs">Certifications</a>
+                <a href="#about-me">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="status">● Running</div>
         </div>
-        <div class="status">● Available</div>
     </nav>
 
     <main>
-        <section class="hero">
-            <h1>Cybersecurity <br>Researcher from <span class="highlight">Brazill</span></h1>
-            <p class="subtitle">Especialista em segurança ofensiva e desenvolvimento de exploits focado em sistemas distribuídos.</p>
-            <div class="cta-group">
-                <a href="#" class="btn-primary">Read Reports</a>
-                <a href="#" class="btn-secondary">Contact</a>
+        <header class="hero">
+            <div class="hero-content">
+                <h1 id="typewriter"></h1>
+                <p class="subtitle">Guilherme Santos - Cybersecurity Analyst</p>
+                <div class="cta-group">
+                    <a href="#work" class="btn-primary">View Portfolio</a>
+                    <a href="https://github.com/Guilherme-Santos42" target="_blank" class="btn-secondary">GitHub</a>
+                </div>
             </div>
-        </section>
+        </header>
 
         <section id="work" class="work-section">
-            <h2 class="section-title">Work</h2>
-            
-            <div class="project-card" style="--card-bg: #1a1c2e;">
-                <div class="project-content">
-                    <span class="tag">Bug Bounty</span>
-                    <h3>Private Target Analysis</h3>
-                    <p>Identificação de vulnerabilidades críticas em infraestruturas de nuvem.</p>
-                </div>
-                <div class="project-visual">
-                    <img src="https://via.placeholder.com/400x250/1a1c2e/ffffff?text=Dashboard+Preview" alt="Projeto">
-                </div>
-            </div>
+            <div class="section-container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <a href="https://github.com/Guilherme-Santos42/AgregatorOSINTApp" target="_blank" class="card-link">
+                    <div class="project-card" style="--card-bg: #000000;">
+                        <div class="project-content">
+                            <span class="tag">OSINT / Fullstack</span>
+                            <h3>Agregator OSINT App</h3>
+                            <p>A centralized platform for open-source intelligence gathering and data analysis.</p>
+                        </div>
+                        <div class="project-visual">
+                            <img src="https://github.com/user-attachments/assets/d5b50648-87ff-49ee-bcae-9e0620482feb" alt="OSINT Project">
+                        </div>
+                    </div>
+                </a>
 
-            <div class="project-card" style="--card-bg: #1a2e22;">
-                <div class="project-content">
-                    <span class="tag">Exploit Dev</span>
-                    <h3>Kernel Module Bypass</h3>
-                    <p>Pesquisa sobre técnicas de evasão de EDR em ambientes Windows.</p>
-                </div>
-                <div class="project-visual">
-                    <img src="https://via.placeholder.com/400x250/1a2e22/ffffff?text=Terminal+Output" alt="Projeto">
+                <a href="https://github.com/Guilherme-Santos42/NetworkDiscoverApp" target="_blank" class="card-link">
+                    <div class="project-card" style="--card-bg: #000000;">
+                        <div class="project-content">
+                            <span class="tag">Security / Android</span>
+                            <h3>Network Discover App</h3>
+                            <p>Advanced mobile tool for network scanning and infrastructure mapping.</p>
+                        </div>
+                        <div class="project-visual">
+                            <img src="https://github.com/user-attachments/assets/9695fb80-bf61-4001-b56c-e705d7e8a9c5" alt="Network Project">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919827.png"><p>HTML</p></div>
+                    <div class="skill-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919826.png"><p>CSS</p></div>
+                    <div class="skill-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919828.png"><p>JS</p></div>
+                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/c469770c-538f-4364-9d4f-0ab32ce92995"><p>Java</p></div>
+                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/a236e4d0-0b08-4e7a-8279-e8e69c5c9e9b"><p>Python</p></div>
+                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/4ba895a4-e525-426b-a21b-ac2c779e884c"><p>React</p></div>
+                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/b4c1fb60-52e0-4f60-8a26-fb7c2721f023"><p>AWS</p></div>
+                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/57dc6b15-fa1b-4e56-b56c-2bfaa61c562f"><p>Azure</p></div>
+                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/08e0ccf4-cdcb-4cb7-b551-f769ae33b8da"><p>Fortigate</p></div>
+                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/d58b4703-e395-45c4-9e72-5517d25dbb93"><p>Zabbix</p></div>
                 </div>
             </div>
         </section>
+
+        <section id="certs" class="certs-section">
+            <div class="section-container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-grid">
+                    <img src="https://github.com/user-attachments/assets/58b9e6b3-8322-4648-bfcf-2a0290256b4e" title="ITIL Foundation">
+                    <img src="https://github.com/user-attachments/assets/aa4a7872-7877-4fc3-a2fe-9d907cbd4acc" title="Microsoft Azure Fundamentals">
+                    <img src="https://github.com/user-attachments/assets/878e8554-145a-44f2-9322-848cf54539a9" title="AWS Cloud Practitioner">
+                    <img src="https://github.com/user-attachments/assets/bc82f600-5c3e-4d35-bf50-5e08956b3140" title="Google Cloud Cybersecurity">
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me" class="about-section">
+            <div class="section-container about-container">
+                <div class="about-photo">
+                    <img src="https://github.com/user-attachments/assets/d7617aa8-e6b8-4da1-ba3b-43d9699e9c7a" alt="Guilherme Santos">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I hold a degree in <strong>Information Systems (UNIFSJ)</strong> and am currently specializing in <strong>Cybersecurity and Data Governance</strong>.</p><br>
+                    <p>My career is dedicated to IT Infrastructure, Information Security, and Systems Development. I have hands-on experience with Java, React, and Python, alongside server automation, cloud computing, and advanced cyber defense practices.</p>
+                    <br><p>I am driven by continuous learning and the belief that technology is the ultimate tool for global transformation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <h2 class="section-title">Contact Me</h2>
+                <form action="https://formspree.io/f/xwvevaaw" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Project Details" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="section-container footer-flex">
+                <p>© 2025 Guilherme Santos</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Guilherme-Santos42" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/guilherme-santos-6ab45b162/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
     </main>
 
     <script src="script.js"></script>

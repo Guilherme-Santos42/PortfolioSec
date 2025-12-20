@@ -1,23 +1,46 @@
-// Efeito de aparecer ao rolar (Scroll Reveal)
-const observerOptions = {
-    threshold: 0.1
-};
+const canvas = document.getElementById('terminal-bg');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
+const chars = "010101ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const fontSize = 16;
+const columns = canvas.width / fontSize;
+const drops = Array(Math.floor(columns)).fill(1);
+
+function drawMatrix() {
+    ctx.fillStyle = "rgba(3, 3, 3, 0.08)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#00ff41";
+    ctx.font = fontSize + "px monospace";
+    drops.forEach((y, i) => {
+        const text = chars[Math.floor(Math.random() * chars.length)];
+        ctx.fillText(text, i * fontSize, y * fontSize);
+        if (y * fontSize > canvas.height && Math.random() > 0.98) drops[i] = 0;
+        drops[i]++;
     });
-}, observerOptions);
+}
 
-document.querySelectorAll('.project-card').forEach(card => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(30px)";
-    card.style.transition = "all 0.6s ease-out";
-    observer.observe(card);
+// Frase com marcador de quebra |
+const titleText = "Securing infrastructure |through advanced defense.";
+let index = 0;
+
+function typeWriter() {
+    const element = document.getElementById("typewriter");
+    if (index < titleText.length) {
+        let char = titleText.charAt(index);
+        if (char === "|") {
+            element.innerHTML += "<br>";
+        } else {
+            element.innerHTML += char;
+        }
+        index++;
+        setTimeout(typeWriter, 70);
+    }
+}
+
+window.onload = () => { typeWriter(); setInterval(drawMatrix, 40); };
+window.addEventListener('resize', () => { 
+    canvas.width = window.innerWidth; 
+    canvas.height = window.innerHeight; 
 });
-
-// Mensagem secreta no console
-console.log("%c Welcome to the Grid ", "color: #00ff41; background: #000; font-size: 20px;");
