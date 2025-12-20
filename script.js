@@ -21,26 +21,15 @@ function drawMatrix() {
     });
 }
 
-// Frase com marcador de quebra |
-const titleText = "Securing infrastructure |through advanced defense.";
+const titleText = "Securing infrastructure through advanced defense.";
 let index = 0;
-
 function typeWriter() {
-    const element = document.getElementById("typewriter");
     if (index < titleText.length) {
-        let char = titleText.charAt(index);
-        if (char === "|") {
-            element.innerHTML += "<br>";
-        } else {
-            element.innerHTML += char;
-        }
+        document.getElementById("typewriter").innerHTML += titleText.charAt(index);
         index++;
         setTimeout(typeWriter, 70);
     }
 }
 
 window.onload = () => { typeWriter(); setInterval(drawMatrix, 40); };
-window.addEventListener('resize', () => { 
-    canvas.width = window.innerWidth; 
-    canvas.height = window.innerHeight; 
-});
+window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });

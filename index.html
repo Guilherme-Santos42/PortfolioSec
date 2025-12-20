@@ -3,107 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guilherme Santos | Cybersecurity Analyst</title>
     <link rel="icon" type="image/png" href="1.png">
+    <title>Guilherme Santos | Cybersecurity Analyst</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <canvas id="terminal-bg"></canvas>
 
-    <nav class="nav-full">
-        <div class="nav-container">
-            <div class="logo">kali@sec:~$ <span class="cursor">_</span></div>
-            <div class="nav-links">
-                <a href="#work">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#certs">Certifications</a>
-                <a href="#about-me">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="status">● Running</div>
+    <nav>
+        <div class="logo">guilherme@sec:~$ <span class="cursor">_</span></div>
+        <div class="nav-links">
+            <a href="#work">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certs">Certifications</a>
+            <a href="#about-me">About</a>
+            <a href="#contact">Contact</a>
         </div>
+        <div class="status">● System Active</div>
     </nav>
 
     <main>
         <header class="hero">
-            <div class="hero-content">
-                <h1 id="typewriter"></h1>
-                <p class="subtitle">Guilherme Santos - Cybersecurity Analyst</p>
-                <div class="cta-group">
-                    <a href="#work" class="btn-primary">View Portfolio</a>
-                    <a href="https://github.com/Guilherme-Santos42" target="_blank" class="btn-secondary">GitHub</a>
-                </div>
+            <h1 id="typewriter"></h1>
+            <p class="subtitle">Guilherme Santos - Cybersecurity Analyst</p>
+            <div class="cta-group">
+                <a href="#work" class="btn-primary">View Portfolio</a>
+                <a href="https://github.com/Guilherme-Santos42" target="_blank" class="btn-secondary">GitHub</a>
             </div>
         </header>
 
-        <section id="work" class="work-section">
-            <div class="section-container">
-                <h2 class="section-title">Featured Projects</h2>
-                
-                <a href="https://github.com/Guilherme-Santos42/AgregatorOSINTApp" target="_blank" class="card-link">
-                    <div class="project-card" style="--card-bg: #000000;">
-                        <div class="project-content">
-                            <span class="tag">OSINT / Fullstack</span>
-                            <h3>Agregator OSINT App</h3>
-                            <p>A centralized platform for open-source intelligence gathering and data analysis.</p>
-                        </div>
-                        <div class="project-visual">
-                            <img src="https://github.com/user-attachments/assets/d5b50648-87ff-49ee-bcae-9e0620482feb" alt="OSINT Project">
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://github.com/Guilherme-Santos42/NetworkDiscoverApp" target="_blank" class="card-link">
-                    <div class="project-card" style="--card-bg: #000000;">
-                        <div class="project-content">
-                            <span class="tag">Security / Android</span>
-                            <h3>Network Discover App</h3>
-                            <p>Advanced mobile tool for network scanning and infrastructure mapping.</p>
-                        </div>
-                        <div class="project-visual">
-                            <img src="https://github.com/user-attachments/assets/9695fb80-bf61-4001-b56c-e705d7e8a9c5" alt="Network Project">
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <section id="skills" class="skills-section">
-            <div class="section-container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919827.png"><p>HTML</p></div>
-                    <div class="skill-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919826.png"><p>CSS</p></div>
-                    <div class="skill-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919828.png"><p>JS</p></div>
-                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/c469770c-538f-4364-9d4f-0ab32ce92995"><p>Java</p></div>
-                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/a236e4d0-0b08-4e7a-8279-e8e69c5c9e9b"><p>Python</p></div>
-                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/4ba895a4-e525-426b-a21b-ac2c779e884c"><p>React</p></div>
-                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/b4c1fb60-52e0-4f60-8a26-fb7c2721f023"><p>AWS</p></div>
-                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/57dc6b15-fa1b-4e56-b56c-2bfaa61c562f"><p>Azure</p></div>
-                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/08e0ccf4-cdcb-4cb7-b551-f769ae33b8da"><p>Fortigate</p></div>
-                    <div class="skill-item"><img src="https://github.com/user-attachments/assets/d58b4703-e395-45c4-9e72-5517d25dbb93"><p>Zabbix</p></div>
+        <section id="work" class="work-section reveal-hidden">
+    <div class="section-container">
+        <h2 class="section-title glitch">Featured Projects</h2>
+        
+        <a href="https://github.com/Guilherme-Santos42/AgregatorOSINTApp" target="_blank" class="card-link">
+            <div class="project-card" style="--card-bg: #000000;">
+                <div class="project-content">
+                    <span class="tag">B2B / Fullstack</span>
+                    <h3>Marketplace Platform</h3>
+                    <p>Centralized B2B supplier platform for supply chain integration.</p>
+                </div>
+                <div class="project-visual">
+                    <img src="https://github.com/user-attachments/assets/d5b50648-87ff-49ee-bcae-9e0620482feb" alt="OSINT Project">
                 </div>
             </div>
-        </section>
+        </a>
 
-        <section id="certs" class="certs-section">
-            <div class="section-container">
-                <h2 class="section-title">Certifications</h2>
-                <div class="cert-grid">
-                    <img src="https://github.com/user-attachments/assets/58b9e6b3-8322-4648-bfcf-2a0290256b4e" title="ITIL Foundation">
-                    <img src="https://github.com/user-attachments/assets/aa4a7872-7877-4fc3-a2fe-9d907cbd4acc" title="Microsoft Azure Fundamentals">
-                    <img src="https://github.com/user-attachments/assets/878e8554-145a-44f2-9322-848cf54539a9" title="AWS Cloud Practitioner">
-                    <img src="https://github.com/user-attachments/assets/bc82f600-5c3e-4d35-bf50-5e08956b3140" title="Google Cloud Cybersecurity">
+        <a href="https://github.com/Guilherme-Santos42/NetworkDiscoverApp" target="_blank" class="card-link">
+            <div class="project-card" style="--card-bg: #000000;">
+                <div class="project-content">
+                    <span class="tag">Java / Android</span>
+                    <h3>Master Stock App</h3>
+                    <p>Inventory management system with real-time reporting.</p>
                 </div>
+                <div class="project-visual">
+                    <img src="https://github.com/user-attachments/assets/9695fb80-bf61-4001-b56c-e705d7e8a9c5" alt="Network Project">
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+        <section id="skills" class="work-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919827.png"><p>HTML</p></div>
+                <div class="skill-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919826.png"><p>CSS</p></div>
+                <div class="skill-item"><img src="https://cdn-icons-png.flaticon.com/512/919/919828.png"><p>JavaScript</p></div>
+                <div class="skill-item"><img src="https://github.com/user-attachments/assets/c469770c-538f-4364-9d4f-0ab32ce92995"><p>Java</p></div>
+                <div class="skill-item"><img src="https://github.com/user-attachments/assets/a236e4d0-0b08-4e7a-8279-e8e69c5c9e9b"><p>Python</p></div>
+                <div class="skill-item"><img src="https://github.com/user-attachments/assets/4ba895a4-e525-426b-a21b-ac2c779e884c"><p>React</p></div>
+                <div class="skill-item"><img src="https://github.com/user-attachments/assets/b4c1fb60-52e0-4f60-8a26-fb7c2721f023"><p>AWS</p></div>
+                <div class="skill-item"><img src="https://github.com/user-attachments/assets/57dc6b15-fa1b-4e56-b56c-2bfaa61c562f"><p>Azure</p></div>
+                <div class="skill-item"><img src="https://github.com/user-attachments/assets/08e0ccf4-cdcb-4cb7-b551-f769ae33b8da"><p>Fortigate</p></div>
+                <div class="skill-item"><img src="https://github.com/user-attachments/assets/d58b4703-e395-45c4-9e72-5517d25dbb93"><p>Zabbix</p></div>
             </div>
         </section>
 
-        <section id="about-me" class="about-section">
+        <section id="certs" class="work-section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <img src="https://github.com/user-attachments/assets/58b9e6b3-8322-4648-bfcf-2a0290256b4e" title="ITIL Foundation">
+                <img src="https://github.com/user-attachments/assets/aa4a7872-7877-4fc3-a2fe-9d907cbd4acc" title="Microsoft Azure Fundamentals">
+                <img src="https://github.com/user-attachments/assets/878e8554-145a-44f2-9322-848cf54539a9" title="AWS Cloud Practitioner">
+                <img src="https://github.com/user-attachments/assets/bc82f600-5c3e-4d35-bf50-5e08956b3140" title="Google Cloud Cybersecurity">
+            </div>
+        </section>
+
+        <section id="about-me" class="about-section reveal-hidden">
             <div class="section-container about-container">
-                <div class="about-photo">
-                    <img src="https://github.com/user-attachments/assets/d7617aa8-e6b8-4da1-ba3b-43d9699e9c7a" alt="Guilherme Santos">
-                </div>
+                <div class="about-photo"><img src="https://github.com/user-attachments/assets/d7617aa8-e6b8-4da1-ba3b-43d9699e9c7a"></div>
                 <div class="about-text">
                     <h2 class="section-title">About Me</h2>
                     <p>I hold a degree in <strong>Information Systems (UNIFSJ)</strong> and am currently specializing in <strong>Cybersecurity and Data Governance</strong>.</p><br>
@@ -113,14 +103,14 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <div class="section-container">
-                <h2 class="section-title">Contact Me</h2>
+        <section id="contact" class="contact-section reveal-hidden">
+            <div class="section-container contact-wrapper">
+                <h2 class="section-title glitch">Contact Me</h2>
                 <form action="https://formspree.io/f/xwvevaaw" method="POST" class="contact-form">
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="email" name="email" placeholder="Email" required>
                     <textarea name="message" placeholder="Project Details" rows="5" required></textarea>
-                    <button type="submit" class="btn-primary">Send Message</button>
+                    <button type="submit" class="btn-primary">Send Message</button><br>
                 </form>
             </div>
         </section>
