@@ -1,4 +1,5 @@
 # PortofolioSec
 My Cybersecurity Portfolio2025
-<img width="1346" height="884" alt="zabbix-logo (2)" src="https://github.com/user-attachments/assets/59c0b6b7-1435-44d0-9554-9e4c46df1538" />
+<img width="505" height="600" alt="image" src="https://github.com/user-attachments/assets/98eb42b2-0fc8-4c18-a37e-990ab397af96" />
+
 
