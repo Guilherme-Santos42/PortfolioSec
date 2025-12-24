@@ -10,8 +10,9 @@ If you haven't, keep practicing! Success belongs to those who pursue it!
 <details>
   <summary>🔓 Clique aqui para ver a resolução</summary>
 
-  A flag estava escondida nos comentários do arquivo `script.js` na linha 42!
-  <img width="417" height="55" alt="image" src="https://github.com/user-attachments/assets/a6434cee-6ab2-4d26-9745-268058665fbe" />
+  A flag estava escondida nos comentários do arquivo `script.js` na linha 42!<br>
+  <img width="417" height="55" alt="image" src="https://github.com/user-attachments/assets/a6434cee-6ab2-4d26-9745-268058665fbe" /><br>
+  
   **Flag:** `FLAG{c0ment4r10_ocult0}`
 </details>
 
