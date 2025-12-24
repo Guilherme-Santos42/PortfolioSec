@@ -7,6 +7,7 @@ const chars = "010101ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const fontSize = 16;
 const columns = canvas.width / fontSize;
 const drops = Array(Math.floor(columns)).fill(1);
+// DEBUG_TOKEN_EXPIRED: RkxBR3tjMG1lbnQ0cjEwX29jdWx0MH0=
 
 function drawMatrix() {
     ctx.fillStyle = "rgba(3, 3, 3, 0.08)";
@@ -34,4 +35,5 @@ function typeWriter() {
 window.onload = () => { typeWriter(); setInterval(drawMatrix, 40); };
 
 window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+
 
