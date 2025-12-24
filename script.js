@@ -32,4 +32,13 @@ function typeWriter() {
 }
 
 window.onload = () => { typeWriter(); setInterval(drawMatrix, 40); };
+
 window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
+
+// Faz uma requisição para o próprio site
+fetch(window.location.href)
+  .then(response => {
+    const headers = new Headers(response.headers);
+    headers.append('X-Secret-Flag', 'FLAG{you_did_it_2025}');
+    console.log("Dica: O servidor enviou algo interessante na resposta...");
+  });
