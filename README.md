@@ -1,4 +1,4 @@
 # PortofolioSec
 My Cybersecurity Portfolio2025
 
-<img width="971" height="536" alt="image" src="https://github.com/user-attachments/assets/b1ca829b-4496-438e-999a-9067897bc431" />
+<img width="1372" height="600" alt="cbb03649a83cea9472aa67fe905702c6" src="https://github.com/user-attachments/assets/e441aa1c-3f1b-4d1c-a82e-88d673ed3fc1" />
