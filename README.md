@@ -16,4 +16,3 @@ If you haven't, keep practicing! Success belongs to those who pursue it!
   **Flag:** `FLAG{c0ment4r10_ocult0}`
 </details>
 
-<img width="2000" height="2000" alt="icon-nse-asso-cybersecurity" src="https://github.com/user-attachments/assets/23fa2953-53e8-4a55-a745-9c6f3f0dc4ad" />
