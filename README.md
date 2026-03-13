@@ -1,5 +1,6 @@
 # PortofolioSec
 My Cybersecurity Portfolio2025
+![favicon](https://github.com/user-attachments/assets/36197061-287e-445d-8116-9b5f2f0f71b1)
 
 I've included a CTF (Capture the Flag) exercise for you in my portfolio; it's quite simple, but I hope you like it!
 
